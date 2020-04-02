@@ -9,8 +9,8 @@ module.exports.show=(req,res)=>{
             res.json(user)
         }
         else{
-            const newTweet =new Tweet({name : name})
-            newTweet.save()
+            const tweet = new Tweet({name : name})
+            tweet.save()
             .then((tweet)=>{
                // console.log(tweet)
                 res.json(tweet)
