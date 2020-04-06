@@ -22,10 +22,10 @@ tweetsSchema.pre('save', function(next){
     console.log('hi',tweet.name)
     if(tweet.isNew){
         var client = new Twitter({
-            consumer_key: 'sD7bvs19ieakK6dsKy7pxJgHG',
-            consumer_secret: '5JcpHesS3N9lONKdsehzK4CdcUEznJ0XKrZP6vcEAbRhQpaSZk',
-            access_token_key: '3551371214-ty53NHIXpY5h93ifT3MBkho0iAnqKFMxmn2ZZHg',
-            access_token_secret: 'eUREyS8lTliyr4yzlYtj9rN5c79vUUWpK260NNXxTMVz2'
+            consumer_key: '',
+            consumer_secret: '',
+            access_token_key: '',
+            access_token_secret: ''
           });
            
           var params = {screen_name: tweet.name};
